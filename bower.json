@@ -1,0 +1,30 @@
+{
+  "name": "react-knowledge-bomb",
+  "version": "0.0.0",
+  "homepage": "https://github.com/millidavids/react-knowledge-bomb",
+  "authors": [
+    "David Yurek <david.a.yurek@gmail.com>"
+  ],
+  "description": "Let's learn some react.js!",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "react",
+    "javascript",
+    "learning",
+    "knowledge",
+    "bomb"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.12.2"
+  }
+}
