@@ -2,6 +2,8 @@
   "name": "react-knowledge-bomb",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0"
+    "bootstrap-sass-official": "~3.2.0",
+    "jquery": "~2.1.3",
+    "react": "~0.12.2"
   }
 }
