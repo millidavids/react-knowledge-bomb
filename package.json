@@ -1,0 +1,25 @@
+{
+  "name": "react-knowledge-bomb",
+  "version": "0.0.0",
+  "description": "react knowledge bomb for knowledge",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/millidavids/react-knowledge-bomb.git"
+  },
+  "author": "David Yurek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/millidavids/react-knowledge-bomb/issues"
+  },
+  "homepage": "https://github.com/millidavids/react-knowledge-bomb"
+}
