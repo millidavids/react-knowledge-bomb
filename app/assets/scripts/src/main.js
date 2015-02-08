@@ -7,7 +7,7 @@ var FaceGrid = React.createClass({
     for (var i = 0; i < rowNumber; i++) {
       var dataIndices;
       if (i === (rowNumber - 1)) {
-        dataIndices = [this.state.rowItems*i, this.props.data.length-1];
+        dataIndices = [this.state.rowItems*i, this.props.data.length];
       } else {
         dataIndices = [this.state.rowItems*i, this.state.rowItems*(i+1)];
       }
@@ -42,8 +42,10 @@ var FaceGrid = React.createClass({
 var FaceRow = React.createClass({
   render: function() {
     var faces = [];
-    for (var face in this.props.data) {
-      faces.push(<Face key={face['name']} data={face} />)
+    var dataArray = this.props.data
+    for (var i = 0; i < dataArray.length; i++) {
+      var face = dataArray[i];
+      faces.push(<Face key={face['name'] + i.toString()} data={face} />);
     }
     return (
       <div className='faceRow'>
@@ -65,7 +67,9 @@ var FaceDescriptionRow = React.createClass({
 var Face = React.createClass({
   render: function() {
     return (
-      <h1>{this.props.data['name']}</h1>
+      <div className='face'>
+        <img src='app/assets/images/smiley-face-th.png'></img>
+      </div>
     );
   }
 });

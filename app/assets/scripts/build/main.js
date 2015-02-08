@@ -7,7 +7,7 @@ var FaceGrid = React.createClass({displayName: "FaceGrid",
     for (var i = 0; i < rowNumber; i++) {
       var dataIndices;
       if (i === (rowNumber - 1)) {
-        dataIndices = [this.state.rowItems*i, this.props.data.length-1];
+        dataIndices = [this.state.rowItems*i, this.props.data.length];
       } else {
         dataIndices = [this.state.rowItems*i, this.state.rowItems*(i+1)];
       }
@@ -42,8 +42,10 @@ var FaceGrid = React.createClass({displayName: "FaceGrid",
 var FaceRow = React.createClass({displayName: "FaceRow",
   render: function() {
     var faces = [];
-    for (var face in this.props.data) {
-      faces.push(React.createElement(Face, {key: face['name'], data: face}))
+    var dataArray = this.props.data
+    for (var i = 0; i < dataArray.length; i++) {
+      var face = dataArray[i];
+      faces.push(React.createElement(Face, {key: face['name'] + i.toString(), data: face}));
     }
     return (
       React.createElement("div", {className: "faceRow"}, 
@@ -65,7 +67,9 @@ var FaceDescriptionRow = React.createClass({displayName: "FaceDescriptionRow",
 var Face = React.createClass({displayName: "Face",
   render: function() {
     return (
-      React.createElement("h1", null, this.props.data['name'])
+      React.createElement("div", {className: "face"}, 
+        React.createElement("img", {src: "app/assets/images/smiley-face-th.png"})
+      )
     );
   }
 });
