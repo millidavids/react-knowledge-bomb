@@ -1,8 +1,11 @@
 .faceGrid {
+  width: 100%;
   border: 2px solid black;
 }
 
 .faceRow {
+  display: table;
+  width: 100%;
   border: 2px solid red;
 }
 
@@ -11,7 +14,8 @@
 }
 
 .face {
-  display: inline-block;
+  display: table-cell;
+  text-align: center;
   border: 2px solid blue;
   min-height: 50px;
   min-width: 50px;
