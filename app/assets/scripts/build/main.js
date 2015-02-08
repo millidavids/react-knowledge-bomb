@@ -42,9 +42,8 @@ var FaceGrid = React.createClass({displayName: "FaceGrid",
 var FaceRow = React.createClass({displayName: "FaceRow",
   render: function() {
     var faces = [];
-    var dataArray = this.props.data
-    for (var i = 0; i < dataArray.length; i++) {
-      var face = dataArray[i];
+    for (var i = 0; i < this.props.data.length; i++) {
+      var face = this.props.data[i];
       faces.push(React.createElement(Face, {key: face['name'] + i.toString(), data: face}));
     }
     return (
