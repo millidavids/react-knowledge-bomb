@@ -1,0 +1,18 @@
+.faceGrid {
+  border: 2px solid black;
+}
+
+.faceRow {
+  border: 2px solid red;
+}
+
+.faceDescriptionRow {
+  border: 2px solid green;
+}
+
+.face {
+  display: inline-block;
+  border: 2px solid blue;
+  min-height: 50px;
+  min-width: 50px;
+}
