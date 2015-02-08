@@ -67,7 +67,7 @@ var Face = React.createClass({displayName: "Face",
   render: function() {
     return (
       React.createElement("div", {className: "face"}, 
-        React.createElement("img", {src: "app/assets/images/smiley-face-th.png"})
+        React.createElement("img", {src: "responsive-table/assets/images/smiley-face-th.png"})
       )
     );
   }
